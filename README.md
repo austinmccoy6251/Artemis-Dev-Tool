@@ -124,6 +124,62 @@ The following `Component Value` are supported at the moment by Artemis:
 
 <br>
 
+# Python Example
+
+## ✏️ Step 1: Building GUI
+We navigate to the [Artemis visual design tool](https://artemisardesigner.com/login.html), and we use our drag and drop components to build the application below. We then download this design `app.json` by clicking the "Export" button at the top. We then place this next to our Python script.
+![GUI Outline](/Readme/images/walkthrough_p1.png)
+
+## ✏️ Step 2: Integrating Into Codebase
+
+First, we import artemis by running the code
+```python
+from artemis_labs import artemis
+```
+
+We then define the function `runVisualizer` which takes in the GUI state with the param `state`:
+```python
+def runVisualizer(state):
+   ...
+```
+
+Inside runVisualizer, we then extracts the value of the three inputs in our GUI `input-mean`, `input-std` and `input-samples`:
+```python
+def runVisualizer(state):
+
+   # Unpack state
+   mean = float(state['input-mean'])
+   variance = float(state['input-std'])
+   samples = int(state['input-samples'])
+   ```
+
+ We then call the function `generate_animated_normal` using these values as arguments, which generates a GIF displaying sampling from a normal distribution,
+ and returns the path of the GIF
+ ```python
+ # Generate animated normal
+ gif_path = generate_animated_normal(mean, variance, samples)
+ ```
+
+Finally, we update the image in the gui named `pdf` with this GIF and the text named 'header' with the text 'My Plot' by calling the code:
+```python
+# Update app
+app.update('pdf', artemis.load_image(gif_path))
+app.update('header', 'MyPlot')
+```
+
+Putting this together, we have the following script:
+
+![GUI Outline](/Readme/images/walkthrough_p2.png)
+
+## ✏️ Step 3: Launching the code
+Now, we run the code from the terminal by typing:
+```ssh
+python code.py
+```
+
+And we observe a web browser appear running our GUI. We enter in some values, press run, and observe the code run as expected.
+![GUI Result](/Readme/images/walkthrough_p3.gif)
+
 # Visual Editor Documentation
 ## Summary
 Artemis visual editor contains a number of prebuilt GUI components, and that list is growing rapidly. Below you will find descriptions of each prebuilt GUI component, the attributes that the visual editor allows you to customize about that component, the information that is included about that component when your code base queries or receives via callback the GUI state (see code information for explanation of GUI state), and the information about that component that can be updated from your code base.
