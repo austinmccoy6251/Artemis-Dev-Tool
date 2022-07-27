@@ -1,188 +1,151 @@
-# Artemis Dev Tool
-### Build working front-ends for desktop apps in minutes.
+# Artemis GUI Engine
 
-Dillinger is a cloud-enabled, mobile-ready, offline-storage compatible,
-AngularJS-powered HTML5 Markdown editor.
+Artemis is a powerful cross-platform GUI engine which makes it **simple** and **fast** to build complex GUI's for your code base. 
 
-- Type some Markdown on the left
-- See HTML in the right
-- ✨Magic ✨
+The GUI development process is *frustrating*, *monotonous*, and *slow*. Even with the help of visual design tools such as Java Netbeans or Python QT's designer, it can still take hours to days to create simple GUI's for your code. 
 
-## Features
+Artemis solves this problem with its GUI engine, which allows you to build your GUI by drag-and-dropping prebuilt components which work out-of-box with no extra code. This completely eliminates all the boiler plate code that you used to have to write just to get your application to work. Artemis runs offline in your local browser, and the Artemis code module for your programming language allows you to connect to it and control it using our API.
+<br><br>
 
-- Import a HTML file and watch it magically convert to Markdown
-- Drag and drop images (requires your Dropbox account be linked)
-- Import and save files from GitHub, Dropbox, Google Drive and One Drive
-- Drag and drop markdown and HTML files into Dillinger
-- Export documents as Markdown, HTML and PDF
+# How it works
+## Step 1: Design your GUI
+ Drag-and-drop prebuilt GUI components in our visual designer to assemble your GUI. Then, customize these components to your liking, and give each important component a unique name.
+![Artemis Code](/Readme/images/process_p1.gif)
 
-Markdown is a lightweight markup language based on the formatting conventions
-that people naturally use in email.
-As [John Gruber] writes on the [Markdown site][df1]
+## Step 2: Integrate into your code
+ Artemis code integration is designed to be simple and painless. 
+ In just three lines of code, you can launch the Artemis GUI, place event listeners on components, and update the content of components.
 
-> The overriding design goal for Markdown's
-> formatting syntax is to make it as readable
-> as possible. The idea is that a
-> Markdown-formatted document should be
-> publishable as-is, as plain text, without
-> looking like it's been marked up with tags
-> or formatting instructions.
+![Artemis Code](/Readme/images/process_p2.gif)
 
-This text you see here is *actually- written in Markdown! To get a feel
-for Markdown's syntax, type some text into the left window and
-watch the results in the right.
+## Step 3: Launch your codebase
+ When your code base runs, Artemis will automatically spawn an offline browser with your GUI. Users may then interact with your codebase through the GUI as if it was designed in your native programming language  
+![Artemis Code](/Readme/images/process_p3.gif)
 
-## Tech
+<br>
+# Features
+Artemis is rapidly adding new and useful features to its platform. If you have features requests please contact the CEO personally at austinmccoy@artemisar.com. We welcome all ideas, and are working hard to make our platform the ideal tool for you.
 
-Dillinger uses a number of open source projects to work properly:
+Artemis currently supports the following features: Input, Text Area, Dropdown, Checkbox, Radio Button, Button, Heading, Image
 
-- [AngularJS] - HTML enhanced for web apps!
-- [Ace Editor] - awesome web-based text editor
-- [markdown-it] - Markdown parser done right. Fast and easy to extend.
-- [Twitter Bootstrap] - great UI boilerplate for modern web apps
-- [node.js] - evented I/O for the backend
-- [Express] - fast node.js network app framework [@tjholowaychuk]
-- [Gulp] - the streaming build system
-- [Breakdance](https://breakdance.github.io/breakdance/) - HTML
-to Markdown converter
-- [jQuery] - duh
+<br><br>
 
-And of course Dillinger itself is open source with a [public repository][dill]
- on GitHub.
-
-## Installation
-
-Dillinger requires [Node.js](https://nodejs.org/) v10+ to run.
-
-Install the dependencies and devDependencies and start the server.
-
+# Python Code Documentation
+## Setup and Installation
+Run the following commands in your terminal to install our Python module using pip
 ```sh
-cd dillinger
-npm i
-node app
+python -m pip install artemis_labs
+python -m pip install artemis_labs --upgrade
 ```
 
-For production environments...
 
-```sh
-npm install --production
-NODE_ENV=production node app
+## Building your GUI
+### ✏️ Step 1: Designing your GUI
+Use the [Artemis visual design tool](https://artemisardesigner.com/login.html) to design a GUI for your application. See the section on "Artemis Design Tool" for more information on using the Artemis visual design tool.
+<br>
+
+### ✏️ Step 2: Downloading GUI design file
+Once you have designed your GUI in the Artemis design tool, you need to export it as a JSON. You can do so by clicking the "Export" button at the top of the visual editor. This will download a JSON file upon clicking it. 
+![Exported image](/Readme/images/export.png)
+### ✏️ Step 3: Moving GUI design file next to Python script
+Place the downloaded JSON file next to the Python script from which you will launch the Artemis GUI
+![Bundle of code](/Readme/images/code_bundle.png)
+
+<br>
+
+## Integrate Artemis Into Codebase
+### ✏️ Step 1: Importing Artemis Python module
+Import the artemis code module using the following import statement
+```python
+from artemis_labs import artemis
 ```
 
-## Plugins
 
-Dillinger is currently extended with the following plugins.
-Instructions on how to use them in your own application are linked below.
-
-| Plugin | README |
-| ------ | ------ |
-| Dropbox | [plugins/dropbox/README.md][PlDb] |
-| GitHub | [plugins/github/README.md][PlGh] |
-| Google Drive | [plugins/googledrive/README.md][PlGd] |
-| OneDrive | [plugins/onedrive/README.md][PlOd] |
-| Medium | [plugins/medium/README.md][PlMe] |
-| Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
-
-## Development
-
-Want to contribute? Great!
-
-Dillinger uses Gulp + Webpack for fast developing.
-Make a change in your file and instantaneously see your updates!
-
-Open your favorite Terminal and run these commands.
-
-First Tab:
-
-```sh
-node app
+### ✏️ Step 2: Launching GUI
+Run the following command at the top of your code to launch the Artemis GUI
+```python
+app = artemis()
 ```
 
-Second Tab:
-
-```sh
-gulp watch
+### ✏️ Step 3: Setting event listeners
+To create an event listener on an component, write the code below, replacing `Event Type` with the chosen event type from the table below, the `Component Name` with the name you gave the GUI component in the visual designer, and the function you'd like to have called when the event occurs.
+```python
+app.on("Event Type", "Component Name", callback_function)
 ```
 
-(optional) Third:
+Example of setting callback on a button
+```python
+# Function which is called when the button 'run' is clicked
+# This function extracts the state of the components named inputEmail
+# and inputPwd, and it prints their values
+@param state JSON object containing GUI state (passed by callback handler)
+def printLoginInfo(state):
+   email = state['inputEmail']
+   pwd = state['inputPwd']
 
-```sh
-karma test
+# Create callback which executes function runMyCode after component named 'run' 
+# is clicked
+app.on('click', 'run', runMyCode)
 ```
 
-#### Building for source
+The following `Event Type` are supported at the moment by Artemis:
+| `Event Type`      | `Event Description `|
+| :---        |    :----:   |
+| Click      | Button click       |
 
-For production release:
 
-```sh
-gulp build --prod
+
+<hr/>
+
+### ✏️ Step 4: Updating components
+To update the content of a component, write the code below, replacing `Component Name` with the name you gave the GUI component in the visual designer, and `ComponentValue` with the content you'd like to update the element with (see below for acceptable values):
+```python
+app.update('Component Name', 'Component Value')
 ```
 
-Generating pre-built zip archives for distribution:
 
-```sh
-gulp build dist --prod
+Example of updating component of type Text:
+```python
+# Update component named 'MyHeading" with text "New Title"
+app.update('MyHeading', 'New Text')
 ```
 
-## Docker
-
-Dillinger is very easy to install and deploy in a Docker container.
-
-By default, the Docker will expose port 8080, so change this within the
-Dockerfile if necessary. When ready, simply use the Dockerfile to
-build the image.
-
-```sh
-cd dillinger
-docker build -t <youruser>/dillinger:${package.json.version} .
+Example of updating component of type Image / GIF:
+```python
+# Update component named MyPlot with image at path ./exportedMatPlotLibPlot.png
+app.update('MyPlot', artemis.load_image('./exportedMatPlotLibPlot.png'))
 ```
 
-This will create the dillinger image and pull in the necessary dependencies.
-Be sure to swap out `${package.json.version}` with the actual
-version of Dillinger.
+The following `Component Value` are supported at the moment by Artemis:
+| `Component Type`      | `Component Value Format `|
+| :---        |    :----:   |
+| Text / Numeric      | "value" |
+| Image / GIF | artemis.load_image('image_path') |
 
-Once done, run the Docker image and map the port to whatever you wish on
-your host. In this example, we simply map port 8000 of the host to
-port 8080 of the Docker (or whatever port was exposed in the Dockerfile):
+<br>
 
-```sh
-docker run -d -p 8000:8080 --restart=always --cap-add=SYS_ADMIN --name=dillinger <youruser>/dillinger:${package.json.version}
+# Visual Editor Documentation
+## Summary
+Artemis visual editor contains a number of prebuilt GUI components, and that list is growing rapidly. Below you will find descriptions of each prebuilt GUI component, the attributes that the visual editor allows you to customize about that component, the information that is included about that component when your code base queries or receives via callback the GUI state (see code information for explanation of GUI state), and the information about that component that can be updated from your code base.
+## Text Input
+Description: This is a single-line text input 
+<summary>Clement Attributes:</summary> 
+<ul>
+<li>[Clement Name] Unique name of component</li>
+<li>[Placeholder Text] Placeholder text for input</li>
+<li>[Border Radius] Input box rounding</li>
+<li>[Transparent Background] If input box is transparent</li>
+</ul>
+ </details>
+
+Query Information (what the GUI state stores about this component): Contents of text input
+```json
+{
+   "text-input" : "This is what the user typed in"
+}
 ```
 
-> Note: `--capt-add=SYS-ADMIN` is required for PDF rendering.
-
-Verify the deployment by navigating to your server address in
-your preferred browser.
-
-```sh
-127.0.0.1:8000
+Update Information (what updating this component does to the GUI): Updates contents of text input
+```python
+app.update('text-input', 'new text input content')
 ```
-
-## License
-
-MIT
-
-**Free Software, Hell Yeah!**
-
-[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
-
-   [dill]: <https://github.com/joemccann/dillinger>
-   [git-repo-url]: <https://github.com/joemccann/dillinger.git>
-   [john gruber]: <http://daringfireball.net>
-   [df1]: <http://daringfireball.net/projects/markdown/>
-   [markdown-it]: <https://github.com/markdown-it/markdown-it>
-   [Ace Editor]: <http://ace.ajax.org>
-   [node.js]: <http://nodejs.org>
-   [Twitter Bootstrap]: <http://twitter.github.com/bootstrap/>
-   [jQuery]: <http://jquery.com>
-   [@tjholowaychuk]: <http://twitter.com/tjholowaychuk>
-   [express]: <http://expressjs.com>
-   [AngularJS]: <http://angularjs.org>
-   [Gulp]: <http://gulpjs.com>
-
-   [PlDb]: <https://github.com/joemccann/dillinger/tree/master/plugins/dropbox/README.md>
-   [PlGh]: <https://github.com/joemccann/dillinger/tree/master/plugins/github/README.md>
-   [PlGd]: <https://github.com/joemccann/dillinger/tree/master/plugins/googledrive/README.md>
-   [PlOd]: <https://github.com/joemccann/dillinger/tree/master/plugins/onedrive/README.md>
-   [PlMe]: <https://github.com/joemccann/dillinger/tree/master/plugins/medium/README.md>
-   [PlGa]: <https://github.com/RahulHP/dillinger/blob/master/plugins/googleanalytics/README.md>
