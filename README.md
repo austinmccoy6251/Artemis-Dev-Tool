@@ -258,35 +258,8 @@ To configure a component, you may click on the component, and then adjust its se
 ### Navigating Between Pages
 To allow your GUI to navigate between pages, you must place a button, select the button, and then enter into the "Advanced Tab" in the right upper corner of the screen.
 
-![Advanced](/Readme/images/connect_page.png)
+![Advanced](/Readme/images/advanced.png)
 
 Then, choose from the dropdown the page you'd like to go to once the button is clicked
 
-
-
-
-Underneat this website, create an account, and then login to get started! If you haven't already subscribed to Artemis, you will need to visit the main website at 
-## Summary
-Artemis visual editor contains a number of prebuilt GUI components, and that list is growing rapidly. Below you will find descriptions of each prebuilt GUI component, the attributes that the visual editor allows you to customize about that component, the information that is included about that component when your code base queries or receives via callback the GUI state (see code information for explanation of GUI state), and the information about that component that can be updated from your code base.
-## Text Input
-Description: This is a single-line text input 
-<summary>Clement Attributes:</summary> 
-<ul>
-<li>[Clement Name] Unique name of component</li>
-<li>[Placeholder Text] Placeholder text for input</li>
-<li>[Border Radius] Input box rounding</li>
-<li>[Transparent Background] If input box is transparent</li>
-</ul>
- </details>
-
-Query Information (what the GUI state stores about this component): Contents of text input
-```json
-{
-   "text-input" : "This is what the user typed in"
-}
-```
-
-Update Information (what updating this component does to the GUI): Updates contents of text input
-```python
-app.update('text-input', 'new text input content')
-```
+![Advanced](/Readme/images/connect_page.png)
