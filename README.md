@@ -178,43 +178,91 @@ python code.py
 ```
 
 And we observe a web browser appear running our GUI. We enter in some values, press run, and observe the code run as expected.
+
 ![GUI Result](/Readme/images/walkthrough_p3.gif)
 
 # Visual Editor Documentation
 ## Getting Started
 ### ✏️ Step 1: Start your free trial
 Visit the main website at https://www.artemisdevtool.com/, click "Start My Free Trial", and sign up for a free trial through our Gumroad link.
+
 ![Start Trial](/Readme/images/start_trial.png)
 
 ### ✏️ Step 2: Get your API KEY
 
 Once you've signed up for a free trial, an email from `Artemis Labs <noreply@customers.gumroad.com>` should be sent to your email. This may take a few minutes. This email contains an `API_KEY` that you need to have on hand.
+
 ![API Key Email](/Readme/images/api_key_email.png)
 
 ### ✏️ Step 3: Create an account
 Now, create an account for the Artemis visual design tool at https://artemisardesigner.com/signup.html
 
 Once redirected to the login page, login, and then enter your `API_KEY` when prompted.
+
 ![API Key](/Readme/images/api_key.png)
 
 ### ✏️ Step 4: Create your first app
 Once you activate your account, go ahead and click the "Create App" button to create your first app. Enter in your app name, and click "Create App"
-![API Key](/Readme/images/create_app.png)
+
+![Create app](/Readme/images/create_app.png)
 
 ### ✏️ Step 5: Edit your first app
 You should now see your app appear in your App Dashboard. Go ahead and click the edit button to edit this app
-![API Key](/Readme/images/edit.png)
+
+![Edit app](/Readme/images/edit.png)
 
 ### ✏️ Step 6: Start editing
 You should now be taken to the editor where you can edit away! Instructions for using the editor can be found below. When you're done, **make sure** to click the Save button at the top to save your changes
-![API Key](/Readme/images/save.png)
+
+![Save app](/Readme/images/save.png)
 
 ### ✏️ Step 7: Test Launch
 To test preview what your app will look like, go back to the app dashboard by clicking "Apps" in the top left corner, or pressing back, and then press the "Launch" button next to your app
-![API Key](/Readme/images/launch.png)
+
+![Launch](/Readme/images/launch.png)
 
 ## Artemis Visual Design Tool Guide
 This guide is for using the Artemis visual design editor. Please read the above section to learn how to get to this point.
+### Creating Pages
+If you need to create multiple windows for your GUI, you will need to create a separate page for each window. To do so, click the "New Page" icon in the page editor
+
+![New page](/Readme/images/new_page.png)
+### Navigating Between Pages
+To switch between pages you are editing, simply click on the page you'd like to navigate to
+
+![Switching pages](/Readme/images/switch_page.png)
+### Reordering Pages
+To reorder pages to make your editing quicker, you can simply drag and drop pages by pressing on a page name and dragging
+
+![Reordering pages](/Readme/images/move_page.png)
+### Configuring Page Name and Size
+To configure page settings, such as its name and size, simply click the "Page Settings" tab and enter your settings as desired
+
+![Page Settings](/Readme/images/page_settings.png)
+### Placing Components
+Place components by navigating to the components tab, expanding a component category, and dragging into the blank canvas.
+
+![Placing components](/Readme/images/drag.png)
+### Resizing Components
+Resize components by single-clicking on the component you desire to resize, and then draging the tabs on the right and bottom of the component until the component is the desired size
+
+![Resizing](/Readme/images/resizing.png)
+### Grouping Components
+You may group components by clicking and dragging to form a box around the components you'd like to group. Once grouped, you may move them as a group
+
+![Grouping](/Readme/images/grouping.png)
+### Configuring Components
+To configure a component, you may click on the component, and then adjust its settings from the menu on the right hand side of the screen.
+
+![Configure](/Readme/images/configure.png)
+### Navigating Between Pages
+To allow your GUI to navigate between pages, you must place a button, select the button, and then enter into the "Advanced Tab" in the right upper corner of the screen.
+
+![Advanced](/Readme/images/connect_page.png)
+
+Then, choose from the dropdown the page you'd like to go to once the button is clicked
+
+
 
 
 Underneat this website, create an account, and then login to get started! If you haven't already subscribed to Artemis, you will need to visit the main website at 
