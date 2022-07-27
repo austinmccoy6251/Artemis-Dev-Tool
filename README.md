@@ -181,6 +181,43 @@ And we observe a web browser appear running our GUI. We enter in some values, pr
 ![GUI Result](/Readme/images/walkthrough_p3.gif)
 
 # Visual Editor Documentation
+## Getting Started
+### ✏️ Step 1: Start your free trial
+Visit the main website at https://www.artemisdevtool.com/, click "Start My Free Trial", and sign up for a free trial through our Gumroad link.
+![Start Trial](/Readme/images/start_trial.png)
+
+### ✏️ Step 2: Get your API KEY
+
+Once you've signed up for a free trial, an email from `Artemis Labs <noreply@customers.gumroad.com>` should be sent to your email. This may take a few minutes. This email contains an `API_KEY` that you need to have on hand.
+![API Key Email](/Readme/images/api_key_email.png)
+
+### ✏️ Step 3: Create an account
+Now, create an account for the Artemis visual design tool at https://artemisardesigner.com/signup.html
+
+Once redirected to the login page, login, and then enter your `API_KEY` when prompted.
+![API Key](/Readme/images/api_key.png)
+
+### ✏️ Step 4: Create your first app
+Once you activate your account, go ahead and click the "Create App" button to create your first app. Enter in your app name, and click "Create App"
+![API Key](/Readme/images/create_app.png)
+
+### ✏️ Step 5: Edit your first app
+You should now see your app appear in your App Dashboard. Go ahead and click the edit button to edit this app
+![API Key](/Readme/images/edit.png)
+
+### ✏️ Step 6: Start editing
+You should now be taken to the editor where you can edit away! Instructions for using the editor can be found below. When you're done, **make sure** to click the Save button at the top to save your changes
+![API Key](/Readme/images/save.png)
+
+### ✏️ Step 7: Test Launch
+To test preview what your app will look like, go back to the app dashboard by clicking "Apps" in the top left corner, or pressing back, and then press the "Launch" button next to your app
+![API Key](/Readme/images/launch.png)
+
+## Artemis Visual Design Tool Guide
+This guide is for using the Artemis visual design editor. Please read the above section to learn how to get to this point.
+
+
+Underneat this website, create an account, and then login to get started! If you haven't already subscribed to Artemis, you will need to visit the main website at 
 ## Summary
 Artemis visual editor contains a number of prebuilt GUI components, and that list is growing rapidly. Below you will find descriptions of each prebuilt GUI component, the attributes that the visual editor allows you to customize about that component, the information that is included about that component when your code base queries or receives via callback the GUI state (see code information for explanation of GUI state), and the information about that component that can be updated from your code base.
 ## Text Input
