@@ -5,7 +5,7 @@ Artemis is a powerful cross-platform GUI engine which makes it **simple** and **
 The GUI development process is *frustrating*, *monotonous*, and *slow*. Even with the help of visual design tools such as Java Netbeans or Python QT's designer, it can still take hours to days to create simple GUI's for your code. 
 
 Artemis solves this problem with its GUI engine, which allows you to build your GUI by drag-and-dropping prebuilt components which work out-of-box with no extra code. This completely eliminates all the boiler plate code that you used to have to write just to get your application to work. Artemis runs offline in your local browser, and the Artemis code module for your programming language allows you to connect to it and control it using our API.
-<br><br>
+
 
 # How it works
 ## Step 1: Design your GUI
