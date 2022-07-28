@@ -280,6 +280,12 @@ Then, choose from the dropdown the page you'd like to go to once the button is c
 
 ![Advanced](/Readme/images/connect_page.png)
 
+
+# Tutorial: Building Artemis GUI for Python App
+Below is a full example of using Artemis to build a graphical user interface for a simple Python application.
+
+[Artemis Case Study](https://youtu.be/_TuejujFstw "Artemis Case Study")
+
 # Troubleshooting
 
 ## Visual Designer
