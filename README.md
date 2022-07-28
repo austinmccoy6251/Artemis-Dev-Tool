@@ -223,6 +223,14 @@ To test preview what your app will look like, go back to the app dashboard by cl
 
 ## Artemis Visual Design Tool Guide
 This guide is for using the Artemis visual design editor. Please read the above section to learn how to get to this point.
+
+### App Name
+Your app name is displayed in the top left corner of the application
+![Application Name](/Readme/images/app_name.png)
+
+### Panning Around
+Click and hold the middle-mouse button to pan around the canvas.
+
 ### Creating Pages
 If you need to create multiple windows for your GUI, you will need to create a separate page for each window. To do so, click the "New Page" icon in the page editor
 
@@ -244,13 +252,17 @@ Place components by navigating to the components tab, expanding a component cate
 
 ![Placing components](/Readme/images/drag.png)
 ### Resizing Components
-Resize components by single-clicking on the component you desire to resize, and then draging the tabs on the right and bottom of the component until the component is the desired size
+Resize components by single-clicking on the component you desire to resize, and then hovering over the borders of the selected element until your cursor turns into a resize icon. Then, click and drag the borders to resize in all directions.size
 
 ![Resizing](/Readme/images/resizing.png)
 ### Grouping Components
 You may group components by clicking and dragging to form a box around the components you'd like to group. Once grouped, you may move them as a group
 
 ![Grouping](/Readme/images/grouping.png)
+
+### Changing Element Layers
+You may right click on an element or a group of elements and choose to "Bring Forward" the element(s) to bring it to a higher layer above elements, or you may choose to "Send Back" the element(s) to send them to a lower layer beneath other elements. Note you may have to do this several times if the adjacent elements are on much higher or lower layers.
+
 ### Configuring Components
 To configure a component, you may click on the component, and then adjust its settings from the menu on the right hand side of the screen.
 
