@@ -263,3 +263,29 @@ To allow your GUI to navigate between pages, you must place a button, select the
 Then, choose from the dropdown the page you'd like to go to once the button is clicked
 
 ![Advanced](/Readme/images/connect_page.png)
+
+# Troubleshooting
+
+## Visual Designer
+### Interface not saving
+Please ensure that you press the "Save" button each time in the toolbar
+### Elements not aligning to gridlines
+Please ensure that your browser is set at 100% zoom. At the moment, if your zoom is different from 100% zoom, element alignment may fail.
+
+## Python Code Integration
+### Pip Installation is Failing
+If you are using `pip install` or `pip3 install`, problems may sometimes occur. Instead use the following commands:
+```sh
+python -m pip install artemis_labs
+python -m pip install artemis_labs --upgrade
+```
+### Python module not allowing me to use the latest features
+Ensure your Python module is upgraded by entering into the terminal:
+```sh
+python -m pip install artemis_labs --upgrade
+```
+### Visual interface not updating
+Please export the latest version of your website from the Artemis designer, place it next to your Python script, and ensure it is labeled exaclty `app.json`.
+
+### Element callback not working
+Please ensure that your Python code is setting a callback on the correct element name. Note that element names are **case-sensitive** and **must be unique**. If you capitalize your element name incorrectly, spell it incorrectly, or have two instances of your element name, issues may arise.
