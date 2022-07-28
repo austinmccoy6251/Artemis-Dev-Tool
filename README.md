@@ -230,19 +230,20 @@ Your app name is displayed in the top left corner of the application
 
 ### Panning Around
 Click and hold the middle-mouse button to pan around the canvas.
+![Launch](/Readme/images/panning.gif)
 
 ### Creating Pages
 If you need to create multiple windows for your GUI, you will need to create a separate page for each window. To do so, click the "New Page" icon in the page editor
-
 ![New page](/Readme/images/new_page.png)
+
 ### Navigating Between Pages
 To switch between pages you are editing, simply click on the page you'd like to navigate to
-
 ![Switching pages](/Readme/images/switch_page.png)
+
 ### Reordering Pages
 To reorder pages to make your editing quicker, you can simply drag and drop pages by pressing on a page name and dragging
+![Launch](/Readme/images/reordering_pages.gif)
 
-![Reordering pages](/Readme/images/move_page.png)
 ### Configuring Page Name and Size
 To configure page settings, such as its name and size, simply click the "Page Settings" tab and enter your settings as desired
 
@@ -250,11 +251,13 @@ To configure page settings, such as its name and size, simply click the "Page Se
 ### Placing Components
 Place components by navigating to the components tab, expanding a component category, and dragging into the blank canvas.
 
-![Placing components](/Readme/images/drag.png)
+![Placing components](/Readme/images/drag.gif)
+
 ### Resizing Components
 Resize components by single-clicking on the component you desire to resize, and then hovering over the borders of the selected element until your cursor turns into a resize icon. Then, click and drag the borders to resize in all directions.size
+![Resizing](/Readme/images/resizing.gif)
 
-![Resizing](/Readme/images/resizing.png)
+
 ### Grouping Components
 You may group components by clicking and dragging to form a box around the components you'd like to group. Once grouped, you may move them as a group
 
@@ -262,6 +265,7 @@ You may group components by clicking and dragging to form a box around the compo
 
 ### Changing Element Layers
 You may right click on an element or a group of elements and choose to "Bring Forward" the element(s) to bring it to a higher layer above elements, or you may choose to "Send Back" the element(s) to send them to a lower layer beneath other elements. Note you may have to do this several times if the adjacent elements are on much higher or lower layers.
+![Launch](/Readme/images/layers.gif)
 
 ### Configuring Components
 To configure a component, you may click on the component, and then adjust its settings from the menu on the right hand side of the screen.
