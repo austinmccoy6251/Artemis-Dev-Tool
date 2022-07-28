@@ -284,7 +284,9 @@ Then, choose from the dropdown the page you'd like to go to once the button is c
 # Tutorial: Building Artemis GUI for Python App
 Below is a full example of using Artemis to build a graphical user interface for a simple Python application.
 
-[Artemis Case Study](https://youtu.be/_TuejujFstw "Artemis Case Study")
+Case Study: [Building Artemis GUI for Python App](https://youtu.be/_TuejujFstw "Artemis Case Study")
+
+![Tutorial Image](/Readme/images/tut.png)
 
 # Troubleshooting
 
