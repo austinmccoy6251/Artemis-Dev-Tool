@@ -7,7 +7,7 @@ The GUI development process is *frustrating*, *monotonous*, and *slow*. Even wit
 Artemis solves this problem with its GUI engine, which allows you to build your GUI by drag-and-dropping prebuilt components which work out-of-box with no extra code. This completely eliminates all the boiler plate code that you used to have to write just to get your application to work. Artemis runs offline in your local browser, and the Artemis code module for your programming language allows you to connect to it and control it using our API.
 
 # Official Documentation
-The official documentation for Artemis is hosted on the [documentation section](https://www.artemisdevtool.com/guidebook/app/documentation/get-started/code-integration.html#full-example) our main website. This Github ReadMe will only contain a subset of that to demonstrate an overview of Artemis alongside a few troubleshooting tips.
+The official documentation for Artemis is hosted on the [documentation section](https://www.artemisdevtool.com/guidebook/app/documentation/get-started/index.html) our main website. This Github ReadMe will only contain a subset of that to demonstrate an overview of Artemis alongside a few troubleshooting tips.
 
 # How it works
 ## Step 1: Design your GUI
